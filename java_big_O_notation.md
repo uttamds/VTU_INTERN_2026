@@ -171,9 +171,9 @@ void permute(String str, String ans) {
 
 ---
 
-## 🧠 Quick Teaching Tip
+## 🧠 Summary
 
-Tell students:
+
 
 * O(1) → “Instant”
 * O(log n) → “Divide”
@@ -183,4 +183,30 @@ Tell students:
 
 ---
 
-If you want, I can convert this into a **one-slide teaching chart** or **interview-ready cheatsheet**.
+# Topics 
+
+
+
+## 🔹 Array Traversal Patterns
+
+Array traversal means visiting each element of an array in a specific order to solve a problem. The most basic pattern is a simple left-to-right loop, but there are many variations such as reverse traversal, skipping elements, or traversing with conditions. Understanding traversal patterns helps us structure logic clearly and efficiently, especially when working with searching, counting, or transforming data inside arrays.
+
+---
+
+## 🔹 Two Pointer Technique
+
+The two pointer technique involves using two indices to traverse an array simultaneously, usually from different directions or at different speeds. This approach is especially useful when the array is sorted, as it helps reduce time complexity compared to nested loops. Instead of checking all possible pairs, we move the pointers based on conditions, making the solution more efficient and often reducing complexity from O(n²) to O(n).
+
+---
+
+## 🔹 Prefix Sum Concept
+
+The prefix sum concept is used to efficiently calculate the sum of elements in a range. Instead of recomputing sums again and again, we store cumulative sums in a new array. Each position in the prefix sum array represents the sum of all elements up to that index. This allows us to answer range sum queries in constant time, making it very useful in problems involving multiple queries on the same data.
+
+---
+
+## 🔹 Kadane’s Algorithm
+
+Kadane’s Algorithm is used to find the maximum sum of a contiguous subarray in an array. Instead of checking all possible subarrays, it works by maintaining a running sum and resetting it whenever it becomes negative. At each step, we keep track of the maximum sum found so far. This makes the algorithm very efficient, running in linear time, and it is widely used in optimization problems involving subarrays.
+
+
