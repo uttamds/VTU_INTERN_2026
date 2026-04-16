@@ -1,4 +1,52 @@
 
+# Big O Notation
+---
+
+## 🔹 O(1) — Constant Time
+
+Constant time means the operation takes the same amount of time regardless of the input size. Whether the data has 10 elements or 10 million elements, the time required does not change. A common example is accessing an element in an array using its index. This is considered the most efficient type of complexity because it does not grow with input size.
+
+---
+
+## 🔹 O(log n) — Logarithmic
+
+Logarithmic time means the problem size is reduced at each step, usually by half. Instead of checking every element, we eliminate large portions of the data repeatedly. A classic example is binary search, where we divide the search space into two halves each time. This makes it very efficient for large datasets.
+
+---
+
+## 🔹 O(n) — Linear Time
+
+Linear time means the running time grows directly with the size of the input. If the input size doubles, the time taken also doubles. This typically happens when we loop through all elements once, such as calculating the sum of an array or searching for an element in an unsorted list.
+
+---
+
+## 🔹 O(n log n) — Linearithmic
+
+This complexity is a combination of linear and logarithmic behavior. We divide the problem into smaller parts and then process all elements. Algorithms like merge sort and quicksort (on average) follow this pattern. It is considered very efficient for sorting because it scales well even for large inputs.
+
+---
+
+## 🔹 O(n²) — Quadratic
+
+Quadratic time occurs when we have nested loops, where each element is compared with every other element. As the input size increases, the time grows much faster. If the input doubles, the time becomes roughly four times. Examples include simple sorting algorithms like bubble sort or checking all pairs in a list.
+
+---
+
+## 🔹 O(2ⁿ) — Exponential
+
+Exponential time means the number of operations doubles with each additional input element. This leads to extremely rapid growth and becomes impractical even for moderately large inputs. A classic example is the naive recursive Fibonacci solution, where the same calculations are repeated multiple times.
+
+---
+
+## 🔹 O(n!) — Factorial
+
+Factorial time represents the highest growth among common complexities. It occurs when we generate all possible permutations of a set. Even a small increase in input size causes a massive increase in computation. For example, with just 5 elements, there are already 120 permutations. This type of complexity is usually avoided unless absolutely necessary.
+
+---
+
+
+
+=================
 Here are **simple Java snippets** for each Big-O from your table.
 
 ---
