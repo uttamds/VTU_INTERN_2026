@@ -65,3 +65,41 @@ public class EquilibriumIndex {
             System.out.println("No Equilibrium Index Found");
     }
 }
+
+
+=====================================
+Remove duplicates from a sorted array using Two Pointers
+======================================
+
+public class RemoveDuplicates {
+
+    public static int removeDuplicates(int[] arr) {
+        if (arr.length == 0) return 0;
+
+        int i = 0; // slow pointer
+
+        for (int j = 1; j < arr.length; j++) { // fast pointer
+            if (arr[j] != arr[i]) {
+                i++;
+                arr[i] = arr[j];
+            }
+        }
+
+        return i + 1; // length of unique elements
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 1, 2, 2, 3, 4, 4};
+
+        int length = removeDuplicates(arr);
+
+        System.out.println("Unique length: " + length);
+
+        System.out.print("Modified array: ");
+        for (int k = 0; k < length; k++) {
+            System.out.print(arr[k] + " ");
+        }
+    }
+}
+
+
