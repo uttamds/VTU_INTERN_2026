@@ -22,3 +22,46 @@ else
 	        right -=1;
 	};
 }
+
+==================
+Equilibrium Index
+=====================
+public class EquilibriumIndex {
+
+    public static int findEquilibriumIndex(int[] arr) {
+        int totalSum = 0;
+
+        // Step 1: Find total sum
+        for (int num : arr) {
+            totalSum += num;
+        }
+
+        int leftSum = 0;
+
+        // Step 2: Traverse and check equilibrium
+        for (int i = 0; i < arr.length; i++) {
+
+            int rightSum = totalSum - leftSum - arr[i];
+
+            if (leftSum == rightSum) {
+                return i; // equilibrium index found
+            }
+
+            leftSum += arr[i];
+        }
+
+        return -1; // no equilibrium index
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr = {1, 3, 5, 2, 2};
+
+        int index = findEquilibriumIndex(arr);
+
+        if (index != -1)
+            System.out.println("Equilibrium Index: " + index);
+        else
+            System.out.println("No Equilibrium Index Found");
+    }
+}
